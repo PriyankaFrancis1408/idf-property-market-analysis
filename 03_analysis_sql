@@ -1,0 +1,16 @@
+-- Q1: Average price per m2 by departement
+SELECT code_departement, COUNT(*) AS n_sales, ROUND(AVG(prix_m2)) AS avg_price_m2
+FROM sales
+GROUP BY code_departement
+ORDER BY avg_price_m2 DESC;
+
+-- Q2: Apartments vs houses (overall)
+SELECT type_local, COUNT(*) AS n_sales, ROUND(AVG(prix_m2)) AS avg_price_m2
+FROM sales
+GROUP BY type_local;
+
+-- Q3: Apartments vs houses inside each departement
+SELECT code_departement, type_local, COUNT(*) AS n_sales, ROUND(AVG(prix_m2)) AS avg_price_m2
+FROM sales
+GROUP BY code_departement, type_local
+ORDER BY code_departement, type_local;
