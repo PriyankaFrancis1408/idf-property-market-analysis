@@ -2,7 +2,7 @@
 
 Python + SQL + Power BI analysis of **127,033 residential property sales** across the 8 départements of Île-de-France, built on French government open data.
 
-![Power BI dashboard](dashboard.png)
+![Power BI dashboard](PowerBI%20dashboard.png)
 
 ## Business question
 An investment firm asks: **where in Île-de-France is property most expensive per m², how do apartments compare with houses, and how did the market move during the year?**
